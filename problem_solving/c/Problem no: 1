@@ -1,23 +1,29 @@
-
-
 #include <stdio.h>
-// lets print five numbers in reverse order, so take the size as 'n' i.e; 5, Therefore
-#define n 5
 void main()
 {
-    int i; //temporary variables
+    int i,n;
+    
+    printf("enter  the size of array:");
+    scanf("%d",&n);
+    int a[n];
+    printf("enter %d numbers into the array\n",n);
+    for(i=0;i<=n-1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf(" the size of array is: %d \n the array elements are:",n);
+    for(i=0;i<=n-1;i++)
+    {
+        printf("%2d",a[i]);
+    }
+    printf(" \n the required output is");
+    for(i=n-1;i>=0;i--)
+    {
+        printf("%2d",a[i]);
+    }
+}
+
+//'i' is temporary variable used for iterating for loop.
+//consider an array size with 'n' and array named 'a';
   //note: if we consider array the allocation position number will start from 0; if the size of array is 5 then the allocation positions will from 0 to 4 i.e; 5 locations.
   //that means, first allocation position in array will be 0 and last allocation elemt will be 4 i.e; n-1;
- //consider an array named A and array size with 'n' amd assign elements statically;
- 
-  int A[n] = {1,2,3,4,5};
-  
- //now print the given array in everse order by accessing the array locations;
- // we use 'for' loop to print the required output in single statement;
- 
- for(i=n-1;i>=0;i--)
- {
-     printf("%d",A[i]);
- }
- 
-}
