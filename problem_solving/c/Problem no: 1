@@ -2,20 +2,14 @@
 void main()
 {
     int i,n;  
-    printf("enter  the size of array:");
     scanf("%d",&n);
+    printf("\n");
     int a[n];
-    printf("enter %d numbers into the array\n",n);
     for(i=0;i<=n-1;i++)
     {
         scanf("%d",&a[i]);
     }
-    printf(" the size of array is: %d \n the array elements are:",n);
-    for(i=0;i<=n-1;i++)
-    {
-        printf("%2d",a[i]);
-    }
-    printf(" \n the required output is");
+    printf("\n");
     for(i=n-1;i>=0;i--)
     {
         printf("%2d",a[i]);
