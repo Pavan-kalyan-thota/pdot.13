@@ -7,7 +7,7 @@ void main()
 {
     int i; //temporary variables
   //note: if we consider array the allocation position number will start from 0; if the size of array is 5 then the allocation positions will from 0 to 4 i.e; 5 locations.
-  //that means, first allocation position in array will be 0 and last allocation elemt will be 4;
+  //that means, first allocation position in array will be 0 and last allocation elemt will be 4 i.e; n-1;
  //consider an array named A and array size with 'n' amd assign elements statically;
  
   int A[n] = {1,2,3,4,5};
@@ -15,7 +15,7 @@ void main()
  //now print the given array in everse order by accessing the array locations;
  // we use 'for' loop to print the required output in single statement;
  
- for(i=4;i>=0;i--)
+ for(i=n-1;i>=0;i--)
  {
      printf("%d",A[i]);
  }
