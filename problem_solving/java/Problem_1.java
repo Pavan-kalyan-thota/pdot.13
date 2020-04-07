@@ -10,17 +10,5 @@ public class Reverse
         arr[i]=sc.nextInt();
       for(int i=n-1;i>=n;i--)
         System.out.print(arr[i]+" ");
-      }
-   }   
-
-
-
-
-#another method
-
-  for(int i=0;i<array.length/2;i++)
-  {
-    int j=array[i];
-    array[i]=array[array.length -i -1];
-    array.length -i -1 = j;
-   }
+    }
+}
