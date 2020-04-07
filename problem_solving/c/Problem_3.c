@@ -16,7 +16,6 @@ void main()
       leftd+=a[i][i];
       rightd+=a[i][n-i-1];
     }
-    }
     printf("%d",abs(leftd-rightd));   //we use abs() fuunction to print absolute value
 }    
     
