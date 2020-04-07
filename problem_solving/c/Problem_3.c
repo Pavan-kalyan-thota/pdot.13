@@ -11,18 +11,11 @@ void main()
          scanf("%d",&a[i][j]);
         }
     }
-    for(i=0;i<=n-1;i++)         //addition for left diagonal
+    for(i=0;i<=n-1;i++)         //addition for left diagonal nd right diagonal
     {
       leftd+=a[i][i];
+      rightd+=a[i][n-i-1];
     }
-    j=n-1;                     //addition for right diagonal
-    for(i=0;i<=n-1;i++)         
-    {
-        if(j>=0)
-        {
-          rightd+=a[i][j];
-          j--;
-        }
     }
     printf("%d",abs(leftd-rightd));   //we use abs() fuunction to print absolute value
 }    
