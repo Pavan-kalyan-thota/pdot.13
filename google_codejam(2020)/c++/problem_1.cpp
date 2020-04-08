@@ -27,6 +27,9 @@ int main(){
                 for(int j=0;j<n;j++){
                     if(m[i][j]==k){
                         count++;
+                    if(count>1){
+                        break;
+                    }
                     }
                 }
                 if(count>1){
@@ -41,6 +44,9 @@ int main(){
                 for(int j=0;j<n;j++){
                     if(mt[i][j]==k){
                         count++;
+                    }
+                    if(count>1){
+                        break;
                     }
                 }
                 if(count>1){
