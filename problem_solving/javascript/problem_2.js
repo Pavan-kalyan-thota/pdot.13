@@ -32,7 +32,7 @@ function main() {
   }
 
   //get result
-  //let result = getResultsUsingLoop(); in is case the code will not execute in given time limit.
+  //let result = getResultsUsingLoop(); in this case the code will not execute in given time limit.
   let result = getResultUsingArrayMap();
 
   //output
