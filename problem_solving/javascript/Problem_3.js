@@ -6,7 +6,7 @@ process.stdin.setEncoding('utf-8');
 
 let inputString = '';
 let currentLine = 0;
-
+//store input
 process.stdin.on('data', function(inputStdin) {
     inputString += inputStdin;
 });
