@@ -1,9 +1,9 @@
 #include <stdio.h>
 void main()
 {
-    int i,j,k,n,t,m;  
+    int i,j,k,n,q,t,m;  
     scanf("%d",&t);
-    for(i=1;i<=t;i++)
+    for(q=1;q<=t;q++)
     {
       scanf("%d",&n);
       int l=0,r=0,c=0,trace=0,rflag=0,cflag=0;
@@ -55,7 +55,7 @@ void main()
                  c=0;
              }
         }
-        printf("case #%d: %d %d %d \n",i,trace,rflag,cflag);
+        printf("case #%d: %d %d %d \n",q,trace,rflag,cflag);
     }
      
 }
