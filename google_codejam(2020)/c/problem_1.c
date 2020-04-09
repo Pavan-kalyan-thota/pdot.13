@@ -1,9 +1,8 @@
 #include <stdio.h>
 void main()
 {
-    int i,j,k,q,p=0,n,t,m;  
+    int i,j,k,n,t,m;  
     scanf("%d",&t);
-    int b[t][3];
     for(i=1;i<=t;i++)
     {
       scanf("%d",&n);
@@ -18,9 +17,9 @@ void main()
          trace+=a[j][j]; 
       }
      
-        for(q=0;q<=n-1;q++)
+        for(i=0;i<=n-1;i++)
         {
-            l=0;m=q;
+            l=0;m=i;
              for(j=0;j<n-1;j++)
              {
                  for(k=j;k<n-1;k++)
@@ -37,7 +36,7 @@ void main()
                  rflag+=1;
                  r=0;
              }  
-           l=q;m=0; 
+           l=i;m=0; 
              for(j=0;j<n-1;j++)
              {
               for(k=j;k<n-1;k++)
@@ -56,21 +55,7 @@ void main()
                  c=0;
              }
         }
-        
-        while(p<i)
-        {
-            b[p][0]=trace;
-            b[p][1]=rflag;
-            b[p][2]=cflag;
-            p++;
-        }
+        printf("case #%d: %d %d %d \n",i,trace,rflag,cflag);
     }
-     for(i=0;i<=t-1;i++)
-     {
-         printf("case #%d: ",i+1);
-         for(j=0;j<3;j++)
-         {
-             printf("%d ",b[i][j]);
-         }
-     }
+     
 }
